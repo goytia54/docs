@@ -155,7 +155,7 @@ You can test a pre-receive hook script locally before you create or update it on
 2. Create a file called `Dockerfile.dev` containing:
 
    ```dockerfile
-   FROM gliderlabs/alpine:3.3
+   FROM alpine:latest
    RUN \
      apk add --no-cache git openssh bash && \
      ssh-keygen -A && \
